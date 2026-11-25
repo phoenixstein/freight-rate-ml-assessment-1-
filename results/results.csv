@@ -1,3 +1,6 @@
 model,mae,mape,rmse,r2,seconds
 baseline_quote_x_distance,304.6246,14.8235,727.9887,0.7642,0.0079
 baseline_median_per_mile,254.2127,11.4144,680.1203,0.7965,0.0413
+linear_ridge,142.5252,6.4429,643.2188,0.818,0.8682
+random_forest,132.409,5.8545,636.4438,0.8217,53.0335
+lightgbm,130.225,5.7913,634.4029,0.8229,3.3491
