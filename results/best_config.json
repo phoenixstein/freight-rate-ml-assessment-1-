@@ -1,10 +1,10 @@
 {
   "target": "price_per_mile",
-  "day_features": true,
+  "day_features": false,
   "params": {
-    "objective": "regression_l1",
-    "n_estimators": 600,
-    "learning_rate": 0.03,
+    "objective": "regression",
+    "n_estimators": 300,
+    "learning_rate": 0.05,
     "num_leaves": 31,
     "random_state": 42,
     "verbose": -1
