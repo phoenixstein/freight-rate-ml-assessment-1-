@@ -80,7 +80,18 @@ Expected result: `train\_final.py` finishes in about a minute, then `score.py` p
 
 
 
-<!-- BUSINESS RESULTS: to be added after the simulation is reviewed -->
+## Business value (simulated broker, Jul to Oct, 19,194 loads)
+
+Each guesser prices every load using only earlier months. The broker adds a 5% margin and the customer accepts up to 10% above the true cost (illustrative assumptions, tested across 9 combinations).
+
+| Price guesser | Profit per ordinary load | Net profit incl. unusual loads |
+|---|---|---|
+| Gut feel (median $/mile) | $8 | -$661k |
+| Posted quote x distance | -$54 | -$1,841k |
+| Basic model (A) | $60 | +$306k |
+| Final model (D) | **$68** | **+$449k** |
+
+The final model was the best guesser in 7 of 9 assumption sets. About 350 unusual loads lose about $825k under every method. See `report/report.docx` for the full discussion.
 
 
 
@@ -108,9 +119,7 @@ Spotter's metric is not shown to candidates, so MAE, MAPE, RMSE and R2 are repor
 
 
 
-\## Note on AI assistance
+## Note on AI assistance
 
-
-
-(Your choice: if you used an AI assistant, say so here in one honest sentence, for example "I used Claude as a tutor and code assistant; I ran, checked and can explain every step.")
+I used Claude as a tutor and code assistant. I ran every script, checked every output and can explain each step.
 
